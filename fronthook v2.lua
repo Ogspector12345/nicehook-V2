@@ -560,7 +560,7 @@ end)
 local slider2 = sector2.element('Slider', 'Aimbot Speed', {default = {min = 1, max = 100, default = 10}}, function(v)
     settings.Aimbot_Speed = v.Slider
 end)
-local dropdown = sector2.element('Dropdown', 'Aimbot Hotkey', {options = {'-','LeftShift', 'LeftAlt', 'Q', 'E', 'X', 'R', 'T', 'Y', 'F12'}}, function(v)
+local dropdown = sector2.element('Dropdown', 'Aimbot Hotkey', {options = {'-','LeftShift', 'LeftAlt', 'Q', 'E', 'X', 'R', 'T', 'F12'}}, function(v)
 	if v.Dropdown == "LeftShift" then
 		settings.Aimbot_Key = Enum.KeyCode.LeftShift
 	elseif v.Dropdown == "LeftAlt" then
@@ -577,8 +577,6 @@ local dropdown = sector2.element('Dropdown', 'Aimbot Hotkey', {options = {'-','L
         settings.Aimbot_Key = Enum.KeyCode.R
         elseif v.Dropdown == "T" then
         settings.Aimbot_Key = Enum.KeyCode.T
-        elseif v.Dropdown == "Y" then
-        settings.Aimbot_Key = Enum.KeyCode.Y
     end
 
 end)
