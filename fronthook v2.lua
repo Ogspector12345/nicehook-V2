@@ -482,7 +482,7 @@ game.Players.PlayerAdded:Connect(function(newplr)
 end)
 
 StarterGui:SetCore("SendNotification", {
-    Title = "fronthook edited By OG12345",
+    Title = "fronthook",
     Text = "https://discord.gg/r8tk45Yprv",
     Duration = 10,
 })
@@ -532,7 +532,7 @@ local toggleFlyGui = sector4.element('Toggle', 'Enable Fly', false, function(v)
 end)
 
 
-local dropdownFlyKey = sector4.element('Dropdown', 'Fly Hotkey', {options = {'-', 'F', 'G', 'H', 'J'}}, function(v)
+local dropdownFlyKey = sector4.element('Dropdown', 'Fly Hotkey', {options = {'F', 'G', 'H', 'J'}}, function(v)
     if v.Dropdown == "F" then
         flyKey = Enum.KeyCode.F
     elseif v.Dropdown == "G" then
@@ -560,7 +560,7 @@ end)
 local slider2 = sector2.element('Slider', 'Aimbot Speed', {default = {min = 1, max = 100, default = 10}}, function(v)
     settings.Aimbot_Speed = v.Slider
 end)
-local dropdown = sector2.element('Dropdown', 'Aimbot Hotkey', {options = {'E', 'LeftShift', 'LeftAlt', 'Q', '-', 'X', 'R', 'T', 'F12'}}, function(v)
+local dropdown = sector2.element('Dropdown', 'Aimbot Hotkey', {options = {'-','E', 'LeftAlt', 'X', 'LeftShift'}}, function(v)
 	if v.Dropdown == "LeftShift" then
 		settings.Aimbot_Key = Enum.KeyCode.LeftShift
 	elseif v.Dropdown == "LeftAlt" then
@@ -569,15 +569,7 @@ local dropdown = sector2.element('Dropdown', 'Aimbot Hotkey', {options = {'E', '
 		settings.Aimbot_Key = Enum.KeyCode.X
         elseif v.Dropdown == "E" then
 		settings.Aimbot_Key = Enum.KeyCode.E
-        elseif v.Dropdown == "Q" then
-        settings.Aimbot_Key = Enum.KeyCode.Q
-        elseif v.Dropdown == "F12" then
-        settings.Aimbot_Key = Enum.KeyCode.F12
-        elseif v.Dropdown == "R" then
-        settings.Aimbot_Key = Enum.KeyCode.R
-        elseif v.Dropdown == "T" then
-        settings.Aimbot_Key = Enum.KeyCode.T
-    end
+	end
 
 end)
 local dropdown2 = sector2.element('Dropdown', 'Hitbox', {options = {'-','Head', 'Torso', 'HumanoidRootPart'}}, function(v)
