@@ -560,7 +560,7 @@ end)
 local slider2 = sector2.element('Slider', 'Aimbot Speed', {default = {min = 1, max = 100, default = 10}}, function(v)
     settings.Aimbot_Speed = v.Slider
 end)
-local dropdown = sector2.element('Dropdown', 'Aimbot Hotkey', {options = {'LeftShift','LeftAlt', 'E', 'Q', '-', 'X', 'R', 'T', 'Y', 'F12'}}, function(v)
+local dropdown = sector2.element('Dropdown', 'Aimbot Hotkey', {options = {'LeftShift','LeftAlt', 'E', 'Q', '-', 'X', 'R', 'T', 'Y', 'U', 'I', 'P', 'F', 'G', 'H', 'J', 'K', 'L', 'Z', 'C', 'V', 'B', 'N', 'M', 'F12'}}, function(v)
 	if v.Dropdown == "LeftShift" then
 		settings.Aimbot_Key = Enum.KeyCode.LeftShift
 	elseif v.Dropdown == "LeftAlt" then
@@ -579,6 +579,38 @@ local dropdown = sector2.element('Dropdown', 'Aimbot Hotkey', {options = {'LeftS
         settings.Aimbot_Key = Enum.KeyCode.T
     elseif v.Dropdown == "Y" then
         settings.Aimbot_Key = Enum.KeyCode.Y
+    elseif v.Dropdown == "U" then
+        settings.Aimbot_Key = Enum.KeyCode.U
+    elseif v.Dropdown == "I" then
+        settings.Aimbot_Key = Enum.KeyCode.I
+    elseif v.Dropdown == "P" then
+        settings.Aimbot_Key = Enum.KeyCode.P
+    elseif v.Dropdown == "F" then
+        settings.Aimbot_Key = Enum.KeyCode.F
+    elseif v.Dropdown == "G" then
+        settings.Aimbot_Key = Enum.KeyCode.G
+    elseif v.Dropdown == "H" then
+        settings.Aimbot_Key = Enum.KeyCode.H
+    elseif v.Dropdown == "J" then
+        settings.Aimbot_Key = Enum.KeyCode.J
+    elseif v.Dropdown == "K" then
+        settings.Aimbot_key = Enum.KeyCode.K
+    elseif v.dropdown == "L" then 
+        settings.Aimbot_Key = Enum.KeyCode.L
+    elseif v.dropdown == "Z" then
+        settings.Aimbot_Key = Enum.KeyCode.Z
+    elseif v.Dropdown == "X" then
+        settings.Aimbot_Key = Enum.KeyCode.X
+    elseif v.dropdown == "C" then
+        settings.Aimbot_Key = Enum.KeyCode.C
+    elseif v.dropdown == "V" then
+        settings.Aimbot_Key = Enum.KeyCode.V
+    elseif v.dropdown == "B" then
+        settings.Aimbot_Key = Enum.KeyCode.B
+    elseif v.dropdown == "N" then
+        settings.Aimbot_Key = Enum.KeyCode.N
+    elseif v.dropdown == "M" then
+        settings.Aimbot_Key = Enum.KeyCode.M
     end
 
 end)
@@ -663,4 +695,4 @@ toggleHighlight:add_color({Color = HighlightColor}, nil, function(v)
 
 
     end
-end)              
+end)
